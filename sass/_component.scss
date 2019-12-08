@@ -31,10 +31,16 @@
         transition: all .2s;
         margin-right: -3.25rem;
 
+        
+
         &:focus{
             outline: none;
             width: 100%;
             background-color: var(--color-grey-light-3);
+            
+            @media only screen and (max-width: $bp-smallest){
+                width: 95%;
+            }
         }
         &::-webkit-input-placeholder{
             font-weight: 100;
@@ -362,13 +368,13 @@
         text-transform: uppercase; 
 
         @media only screen and (max-width: $bp-small){
-            font-size: .5rem;
+            font-size: .6rem;
         }
         @media only screen and (max-width: $bp-nano){
-            font-size: .3rem;
+            font-size: .4rem;
         }
         @media only screen and (max-width: $bp-nano-2){
-            font-size: .2rem;
+            font-size: .3rem;
         }
 
     }
